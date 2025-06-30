@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Demo</title>
+  </head>
+  <body>
+    <h1>Responsive Image with srcset</h1>
+
+    <p>
+      Resize your browser window or open this on your phone to test how
+      different images load.
+    </p>
+
+    <img
+      src="https://via.placeholder.com/600"
+      srcset="
+        https://via.placeholder.com/300 300w,
+        https://via.placeholder.com/600 600w,
+        https://via.placeholder.com/900 900w
+      "
+      sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 600px"
+      alt="Responsive placeholder image"
+    />
+  </body>
+</html>

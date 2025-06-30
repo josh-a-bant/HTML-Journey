@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-practice</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <u> Form practice </u>
+      </h1>
+      <!-- <hr /> -->
+    </header>
+    <main>
+      <form action="#" method="post">
+        <!-- name -->
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          required
+          placeholder="your name"
+        />
+        <br />
+        <!-- Email -->
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="abc@gmail.com"
+        />
+        <br />
+        <!-- Phone -->
+        <label for="phone">phone: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          required
+          placeholder="1234567890"
+        />
+        <br />
+
+        <!-- Gender -->
+        <!-- <label>Gender: </label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <br /> -->
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" name="gender" id="male" value="Male" required />
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+          <legend>Skills:</legend>
+          <!-- <input type="checkbox" name="skills" id="HTML" />
+          <input type="checkbox" name="skills" id="JS" />
+          <input type="checkbox" name="skills" id="Java" /> -->
+          <label for="HTML">
+            <input type="checkbox" name="skills" id="HTML" value="HTML" />
+            HTML
+          </label>
+
+          <input type="checkbox" name="skills" id="css" value="CSS" />
+          <label for="CSS">CSS</label>
+
+          <label for="js">
+            <input type="checkbox" name="skills" id="js" value="JS" />
+            JS
+          </label>
+
+          <label for="Java">
+            <input type="checkbox" name="skills" id="java" value="Java" />
+            Java
+          </label>
+        </fieldset>
+
+        <!-- Country -->
+        <label for="country">Country: </label>
+        <select name="country" id="country" required>
+          <option value="">select a country</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="America">America</option>
+        </select>
+        <br />
+
+        <!-- Message -->
+        <label for="Message">Message: </label><br />
+        <textarea
+          name="Message"
+          id="Message"
+          rows="4"
+          cols="30"
+          placeholder="write your message here"
+        ></textarea>
+        <br />
+
+        <!-- Submit Button -->
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+      </form>
+    </main>
+  </body>
+</html>
