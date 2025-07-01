@@ -1,0 +1,56 @@
+<!-- Incomplete -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list using only HTML</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>To-do List</legend>
+        <label for="listItem">Enter your task:</label>
+        <br />
+        <input
+          type="text"
+          id="listItem"
+          placeholder="ex: learning css"
+          required
+        />
+        <button onclick="addTask()">add</button>
+        <br /><br />
+        <button type="submit" onclick="showAllTask()">Submit</button>
+      </fieldset>
+    </form>
+
+    <p id="showTask"></p>
+
+    <!-- <script>
+      function addTask() {
+        const taskInput = document.getElementById("listItem");
+        const task = taskInput.value.trim();
+
+        let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks.push(task);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        taskInput.value = "";
+      }
+
+      function showTasks() {
+        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        const taskList = document.getElementById("showTask");
+        taskList.innerHTML = "";
+
+        tasks.forEach((task, index) => {
+          const li = document.createElement("li");
+          li.innerText = task;
+          taskList.appendChild(li);
+        });
+
+        console.log(tasks);
+      }
+    </script> -->
+  </body>
+</html>
